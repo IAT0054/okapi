@@ -1,0 +1,64 @@
+/* formulario.css */
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Contenedor del formulario / sección de éxito */
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 40px 20px;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Títulos y párrafos */
+.form-container h2 {
+    color: Black;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.form-container p {
+    margin-bottom: 30px;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Botón */
+.btn {
+    display: inline-block;
+    background-color: pink;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: black;
+}
+

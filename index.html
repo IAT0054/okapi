@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto_1</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <nav class="menu">
+        <section class="menu__container">
+            <h1 class="menu__logo">OKAPI</h1>
+
+            <ul class="menu__links">
+                
+                <li class="menu__item  menu__item--show">
+                    <a href="#" class="menu__link">Categorias</a>
+    
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="hombre.html" class="menu__link menu__link--inside">Hombre</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="mujer.html" class="menu__link menu__link--inside">Mujer</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="niños.html" class="menu__link menu__link--inside">Niños</a>
+                        </li>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="menu__item">
+                    <a href="ayuda.html" class="menu__link">Ayuda</a>
+                </li>
+				
+    
+            </ul>
+
+        </section>
+
+      
+    </nav>
+
+ 
+<header class="site-header">
+   
+   
+    <div class="hero">
+	<video autoplay loop muted plays-inline class="back-video">
+		<source src="https://www.pexels.com/es-es/download/video/4937251/"> 
+	
+	</video>
+      
+	
+      <div class="hero-content container">
+        <h1>Diseñado en Barcelona desde 1984</h1>
+		
+        <a class="btn" href="mujer.html">Ver colección</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+  
+  
+    <!-- =============================
+     MAPA DE IMAGENES: CURIOSIDADES DE ROPA
+============================= -->
+<section class="image-map container">
+  <h2> Curiosidades sobre las prendas</h2>
+<div class="mapa-wrapper">
+  <img
+    src="../images/ropa_curi.jpg"
+    alt="Prendas: bufanda, gorra, suéter, reloj"
+    usemap="#curiosidades-ropa"
+    class="mapa-ropa">
+	<div class="area-debug bufanda"></div>
+	</div>
+
+  <map name="curiosidades-ropa">
+    <!-- Bufanda -->
+    <area shape="rect" coords="180,420,1265,2155"
+          href="https://es.wikipedia.org/wiki/Bufanda"
+          alt="Bufanda - curiosidades" title="Bufanda — ¿desde cuándo se usa?">
+
+    <!-- Gorra -->
+    <area shape="rect" coords="850,220,2150,1110"
+          href="https://es.wikipedia.org/wiki/Gorra"
+          alt="Gorra - curiosidades" title="Gorra — origen y evolución">
+
+    <!-- Reloj -->
+    <area shape="rect" coords="2260,200,3100,450"
+          href="https://es.wikipedia.org/wiki/Reloj_de_pulsera"
+          alt="Reloj - curiosidades" title="Reloj de pulsera — ¿desde cuándo existe?">
+
+
+    <!-- Suéter -->
+    <area shape="rect" coords="3300,285,5000,3350"
+          href="https://es.wikipedia.org/wiki/Suéter"
+          alt="Suéter/Jersey - curiosidades" title="Suéter/Jersey — historia y materialidad">
+  </map>
+
+  <p class="mapa-info">Haz clic sobre cada prenda para descubrir una curiosidad.</p>
+</section>
+
+
+<!-- Para que las coordenas no se muevan -->
+<script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+<script>
+  window.onload = function() {
+    imageMapResize();
+  };
+</script>
+
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+      <div class="container">
+        <h2>Suscríbete y recibe 10% de descuento</h2>
+		<form class="newsletter-form" action="formulario.html" method="get">
+			<input type="email" placeholder="Tu correo electrónico" aria-label="Correo electrónico" name="email" required>
+			<button class="btn" type="submit">Suscribirme</button>
+		</form>
+
+      </div>
+    </section>
+
+  </main>
+
+<table border="1">
+    <tr>
+        <th>Producto</th>
+        <th>Oferta Especial</th>
+    </tr>
+    <tr>
+        <td>Chaquetas</td>
+        <td>20% descuento + 200 puntos</td>
+    </tr>
+    <tr>
+        <td>Jeans</td>
+        <td>Compra 2 y la 3ª prenda al 50%</td>
+    </tr>
+    <tr>
+        <td>Vestidos</td>
+        <td>15% descuento + Envío gratis</td>
+    </tr>
+    <tr>
+        <td colspan="2">🔥 Promo del Mes: Compra superior a 100€ y obtén 500 puntos extra</td>
+    </tr>
+</table>
+
+
+ <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Sobre Nosotros</h3>
+        <p>Moda actual, sostenible y cómoda. Inspirada en ti.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p>Email: okapi@gmail.com</p>
+        <p>Teléfono: +34 123 456 789</p>
+      </div>
+
+      <div class="footer-section social-media">
+        <h3>Síguenos</h3>
+        <a href="https://facebook.com" target="_blank"><img src="../images/facebook.png" alt="Facebook"></a>
+        <a href="https://x.com" target="_blank"><img src="../images/x.png" alt="X"></a>
+        <a href="https://instagram.com" target="_blank"><img src="../images/instagram.png" alt="Instagram"></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 OKAPI. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  
+  
+    <!-- AUDIO DE FONDO -->
+  <audio controls loop>
+    <source src="../Audio/Audio.mp3" type="audio/mpeg">
+  </audio>
+
+</body>
+</html>

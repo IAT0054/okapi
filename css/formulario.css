@@ -1,0 +1,191 @@
+/* ===========================
+   ESTILO GENERAL
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: #333;
+}
+
+.menu {
+  background-color: black;
+  color: #fff;
+  height: 70px;
+  position: relative;
+  z-index: 101;
+}
+
+.menu__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.menu__logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.menu__links {
+  display: flex;
+  height: 100%;
+}
+
+.menu__item {
+  list-style: none;
+  height: 100%;
+}
+
+.menu__link {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  transition: background-color 0.3s;
+}
+
+.menu__link:hover {
+  background-color: #5e7094;
+}
+
+/* ===========================
+   SECCIÓN FORMULARIO
+=========================== */
+.form-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 30px 20px;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+    color: #d63384;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-container p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* ===========================
+   FORMULARIO
+=========================== */
+.advanced-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.advanced-form label {
+    font-weight: 500;
+}
+
+.advanced-form input[type="text"],
+.advanced-form input[type="password"],
+.advanced-form input[type="email"],
+.advanced-form input[type="number"],
+.advanced-form textarea,
+.advanced-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.advanced-form input:focus,
+.advanced-form textarea:focus,
+.advanced-form select:focus {
+    outline: none;
+    border-color: #d63384;
+    box-shadow: 0 0 5px rgba(214,51,132,0.3);
+}
+
+/* Radio y checkbox */
+.radio-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.advanced-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Botones */
+
+.btn {
+  display: inline-block;
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #999;
+}
+
+
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+
+.advanced-form input[type="reset"] {
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+
+.advanced-form input[type="reset"] {
+    background-color: Black;
+    color: white;
+}
+
+.advanced-form input[type="reset"]:hover {
+    background-color: #999;
+}
+
+/* RESPONSIVE */
+@media (max-width: 500px) {
+    .form-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
